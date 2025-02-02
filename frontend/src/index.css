@@ -6,6 +6,11 @@
   font-weight: 300;
 }
 
+body {
+  background-color: #fffdfd;
+  color: #444;
+}
+
 .logo {
   font-family: 'Charm', serif;
 }

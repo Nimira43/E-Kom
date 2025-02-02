@@ -1,6 +1,6 @@
 const Topbar = () => {
   return (
-    <div>
+    <div className='bg-[#ccc]'>
       Topbar      
     </div>
   )
