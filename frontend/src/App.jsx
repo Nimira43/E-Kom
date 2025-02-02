@@ -1,6 +1,16 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import UserLayout from './components/Layout/UserLayout'
+
 const App = () => {
   return (
-    <h1 className='text-3xl font-semibold logo'>E-Kom</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<UserLayout />}></Route>
+        <Route>
+          Admin
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
