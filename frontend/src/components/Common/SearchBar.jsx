@@ -56,9 +56,10 @@ const SearchBar = () => {
       ) : (
         <button 
           onClick={handleSearchToggle}
+          className='text-grey-medium hover:text-blue-dark'
           aria-label='Toggle Search Bar'
         >
-          <RiSearchLine className='h-6 w-6 text-grey-medium hover:text-blue-dark'/>
+          <RiSearchLine className='h-6 w-6' />
         </button>
       )}
     </div>
