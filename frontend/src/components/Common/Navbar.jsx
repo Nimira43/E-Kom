@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from 'react-icons/ri'
 import SearchBar from './SearchBar'
+import CartDrawer from '../Layout/CartDrawer'
 
 const Navbar = () => {
   return (
@@ -36,7 +37,8 @@ const Navbar = () => {
             <RiMenuLine className='h-6 w-6'/>
           </button>
         </div>
-      </nav>    
+      </nav>   
+      <CartDrawer /> 
     </>
   )
 }
