@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from "react-icons/ri"
+import SearchBar from "./SearchBar"
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
             <RiShoppingBag4Line className="h-6 w-6" />
             <span className="absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5">1</span>
           </button>
+          <SearchBar />
           <button className="md:hidden hover:text-blue-dark">
             <RiMenuLine className="h-6 w-6"/>
           </button>
