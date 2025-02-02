@@ -4,7 +4,9 @@ import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from "react-icons/ri"
 const Navbar = () => {
   return (
     <>
-      <nav className='container mx-auto flex items-center justify-between py-4 px-6'>
+      <nav 
+        className='container mx-auto flex items-center justify-between py-4 px-6'
+      >
         <div>
           <Link to='/' className='logo text-2xl font-medium'>
             E-Kom
@@ -24,9 +26,9 @@ const Navbar = () => {
             <RiShoppingBag4Line className="h-6 w-6" />
             <span className="absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5">1</span>
           </button>
-          <Link to='/profile' className="hover:text-blue-dark">
-            <RiMenuLine />
-          </Link>
+          <button className="md:hidden hover:text-blue-dark">
+            <RiMenuLine className="h-6 w-6"/>
+          </button>
         </div>
       </nav>    
     </>
