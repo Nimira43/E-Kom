@@ -1,7 +1,10 @@
+import Topbar from '../Layout/Topbar'
+
 const Header = () => {
   return (
     <div>
-      Header      
+      Header    
+      <Topbar />
     </div>
   )
 }
