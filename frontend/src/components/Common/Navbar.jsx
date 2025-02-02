@@ -18,11 +18,12 @@ const Navbar = () => {
         </div>
         <div className="flex items-center space-x-4">
           <Link to='/profile' className="hover:text-blue-dark">
-            <RiUser6Line />
+            <RiUser6Line className='h-6 w-6' />
           </Link>
-          <Link to='/profile' className="hover:text-blue-dark">
-            <RiShoppingBag4Line />
-          </Link>
+          <button className="relative hover:text-blue-dark">
+            <RiShoppingBag4Line className="h-6 w-6" />
+            <span className="absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5">1</span>
+          </button>
           <Link to='/profile' className="hover:text-blue-dark">
             <RiMenuLine />
           </Link>
