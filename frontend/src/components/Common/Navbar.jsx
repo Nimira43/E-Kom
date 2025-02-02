@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from "react-icons/ri"
 
 const Navbar = () => {
   return (
@@ -14,6 +15,17 @@ const Navbar = () => {
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Women</Link>
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Topwear</Link>
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Bottomwear</Link>
+        </div>
+        <div className="flex items-center space-x-4">
+          <Link to='/profile' className="hover:text-blue-dark">
+            <RiUser6Line />
+          </Link>
+          <Link to='/profile' className="hover:text-blue-dark">
+            <RiShoppingBag4Line />
+          </Link>
+          <Link to='/profile' className="hover:text-blue-dark">
+            <RiMenuLine />
+          </Link>
         </div>
       </nav>    
     </>
