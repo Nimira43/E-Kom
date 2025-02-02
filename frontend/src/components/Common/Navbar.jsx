@@ -25,9 +25,13 @@ const Navbar = () => {
           </Link>
           <button className='relative hover:text-blue-dark'>
             <RiShoppingBag4Line className='h-6 w-6' />
-            <span className='absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5'>1</span>
+            <span className='absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5'>
+              1
+            </span>
           </button>
-          <SearchBar />
+          <div className='overflow-hidden'>
+            <SearchBar />
+          </div>
           <button className='md:hidden hover:text-blue-dark'>
             <RiMenuLine className='h-6 w-6'/>
           </button>
