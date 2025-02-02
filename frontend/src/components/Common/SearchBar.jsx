@@ -5,13 +5,17 @@ const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleSearchToggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div>
       {isOpen ? (
         <form></form>
       ) : (
-        <button>
-          <RiSearchLine />
+        <button onClick={handleSearchToggle}>
+          <RiSearchLine className="h-6 w-6"/>
         </button>
       )}
     </div>
