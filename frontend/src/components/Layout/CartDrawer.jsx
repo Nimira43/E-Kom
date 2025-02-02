@@ -1,11 +1,8 @@
 import { useState } from 'react'
 import { RiCloseLine } from 'react-icons/ri'
 
-const CartDrawer = () => {
-  const [drawerOpen, setDrawerOpen] = useState(true)
-  const toggleCartDrawer = () => {
-    setDrawerOpen(!drawerOpen)
-  }
+const CartDrawer = ({drawerOpen, toggleCartDrawer}) => {
+  
 
   return (
     <div 

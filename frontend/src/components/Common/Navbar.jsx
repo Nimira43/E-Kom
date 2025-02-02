@@ -2,8 +2,13 @@ import { Link } from 'react-router-dom'
 import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from 'react-icons/ri'
 import SearchBar from './SearchBar'
 import CartDrawer from '../Layout/CartDrawer'
+import { useState } from 'react'
 
 const Navbar = () => {
+  const [drawerOpen, setDrawerOpen] = useState(true)
+  const toggleCartDrawer = () => {
+    setDrawerOpen(!drawerOpen)
+  }
   return (
     <>
       <nav 
@@ -24,7 +29,10 @@ const Navbar = () => {
           <Link to='/profile' className='hover:text-blue-dark'>
             <RiUser6Line className='h-6 w-6' />
           </Link>
-          <button className='relative hover:text-blue-dark'>
+          <button 
+            onClick={toggleCartDrawer}
+            className='relative hover:text-blue-dark'
+          >
             <RiShoppingBag4Line className='h-6 w-6' />
             <span className='absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5'>
               1
@@ -38,7 +46,10 @@ const Navbar = () => {
           </button>
         </div>
       </nav>   
-      <CartDrawer /> 
+      <CartDrawer 
+        drawerOpen={drawerOpen}
+        toggleCartDrawer={toggleCartDrawer}
+      /> 
     </>
   )
 }
