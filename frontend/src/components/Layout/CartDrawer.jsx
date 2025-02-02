@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { RiCloseLine } from 'react-icons/ri'
 
 const CartDrawer = ({drawerOpen, toggleCartDrawer}) => {
@@ -18,6 +17,9 @@ const CartDrawer = ({drawerOpen, toggleCartDrawer}) => {
         <button onClick={toggleCartDrawer}>
           <RiCloseLine className='h-6 w-6 text-grey-medium' />
         </button>
+      </div>
+      <div className='flex-grow p-4 overflow-y-auto'>
+        <h2 className='text-xl font-semibold mb-4'>Cart</h2>
       </div>
     </div>
   )
