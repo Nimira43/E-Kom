@@ -1,7 +1,10 @@
+import Header from '../Common/Header'
+
 const UserLayout = () => {
   return (
     <div>
-      User Layout      
+      UserLayout
+      <Header />      
     </div>
   )
 }
