@@ -12,6 +12,7 @@ const SearchBar = () => {
   const handleSearch = (e) => {
     e.preventDefault()
     console.log('Search Term:', searchTerm)
+    setIsOpen(false)
   }
 
   return (
