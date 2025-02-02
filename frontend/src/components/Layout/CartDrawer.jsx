@@ -25,8 +25,8 @@ const CartDrawer = ({drawerOpen, toggleCartDrawer}) => {
         <h2 className='text-xl font-normal mb-4 uppercase'>Cart</h2>
       </div>
       <div className='p-4 bg-grey-medium sticky bottom-0'>
-        <button className=' w-full bg-light hover:bg-blue-light font-normal py-3 rounded-md uppercase'>Checkout</button>
-        <p className='text-white'>Shipping, taxes and discount codes calculated at checkout</p>
+        <button className=' w-full bg-light hover:bg-blue-light font-normal py-3 rounded-md uppercase transition'>Checkout</button>
+        <p className='text-light text-sm tracking-tighter mt-2 text-center'>Shipping, taxes and discount codes calculated at checkout</p>
       </div>
     </div>
   )
