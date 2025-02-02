@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from "react-icons/ri"
-import SearchBar from "./SearchBar"
+import { Link } from 'react-router-dom'
+import { RiUser6Line, RiShoppingBag4Line, RiMenuLine  } from 'react-icons/ri'
+import SearchBar from './SearchBar'
 
 const Navbar = () => {
   return (
@@ -13,23 +13,23 @@ const Navbar = () => {
             E-Kom
           </Link>
         </div>
-        <div className="hidden md:flex space-x-6">
+        <div className='hidden md:flex space-x-6'>
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Men</Link>
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Women</Link>
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Topwear</Link>
           <Link to='#' className='hover:text-blue-dark text-sm font-medium uppercase'>Bottomwear</Link>
         </div>
-        <div className="flex items-center space-x-4">
-          <Link to='/profile' className="hover:text-blue-dark">
+        <div className='flex items-center space-x-4'>
+          <Link to='/profile' className='hover:text-blue-dark'>
             <RiUser6Line className='h-6 w-6' />
           </Link>
-          <button className="relative hover:text-blue-dark">
-            <RiShoppingBag4Line className="h-6 w-6" />
-            <span className="absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5">1</span>
+          <button className='relative hover:text-blue-dark'>
+            <RiShoppingBag4Line className='h-6 w-6' />
+            <span className='absolute -top-2 bg-grey-medium hover:bg-blue-dark text-light text-xs rounded-full px-1.5 py-0.5'>1</span>
           </button>
           <SearchBar />
-          <button className="md:hidden hover:text-blue-dark">
-            <RiMenuLine className="h-6 w-6"/>
+          <button className='md:hidden hover:text-blue-dark'>
+            <RiMenuLine className='h-6 w-6'/>
           </button>
         </div>
       </nav>    
