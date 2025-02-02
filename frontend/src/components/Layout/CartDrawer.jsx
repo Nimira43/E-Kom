@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { RiCloseLine } from 'react-icons/ri'
 
 const CartDrawer = () => {
-  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(true)
   const toggleCartDrawer = () => {
     setDrawerOpen(!drawerOpen)
   }
@@ -15,9 +16,12 @@ const CartDrawer = () => {
           'translate-x-full'
         }`
       }
-
     >
-      
+      <div className='flex justify-end p-4'>
+        <button onClick={toggleCartDrawer}>
+          <RiCloseLine className='h-6 w-6 text-grey-medium' />
+        </button>
+      </div>
     </div>
   )
 }
