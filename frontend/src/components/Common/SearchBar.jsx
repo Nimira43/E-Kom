@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { RiSearchLine } from 'react-icons/ri'
+import { RiCloseLine, RiSearchLine } from 'react-icons/ri'
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -35,6 +35,13 @@ const SearchBar = () => {
               <RiSearchLine className='h-6 w-6'/>
             </button>
           </div>
+          <button 
+            type='button' 
+            onClick={handleSearchToggle}
+            className='absolute right-4 top-1/2 transform -translate-y-1/2 text-grey-medium hover:text-blue-dark'
+          >
+            <RiCloseLine className='h-6 w-6' />
+          </button>
         </form>
       ) : (
         <button 
